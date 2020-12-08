@@ -1,101 +1,91 @@
 <!DOCTYPE html>
-<!--HTML5 doctype-->
-<html lang="en">
-
-<head>
+<html>
+    <head>
+        <title>Me and My Interests</title>
     <meta charset="UTF-8">
-    <title>Semantic Elements complete example</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
-<header id="intro">  
-
-        <h1>HTML5</h1>
-        <h2>Table of Contents</h2>
-        
-   <nav>
-            <ol>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#logo">Logo</a></li>
-                <li><a href="#ref">References</a></li>
-            </ol>
-     </header>
-  </nav>
-  <header>     
-          <artlcle>
-                <h2>Introduction</h2>
-         
-            
-            <p>HTML5 stands for HyperText Markup Language. It is used to create content on the world wide web like webpages. HTML5 is the fifth revision of the language's standard. It was published in October 2014, 17 years after HTML4 was standardized.</p>
-            <p>HTML5 aims to provide improved support for latest multimedia. It also reduced dependency on plugins and APIs providing a common interface making loading elements easier...</p>
-            
-<!--        This is an example of aside. The mark element has also been showcased in the paragraph. -->
-         
-                <h4>API</h4>
-                <p>API stands for Application Programming Interface. It is a set of routines, protocols, and tools for building software and applications.
-                  This content uses the aside element. This is only for semantic meaning and so doesn't carry any instructions for presentation. It will appear like a normal paragraph in your document. If you wish to include this in a sidebar, you will have to provide the appropriate markup and styling for it.</p>
-           
-        
-
-            
-         <section id="history">
-                <h2>History</h2>
-        
-            
-            <p>HTML5 is based on a position paper presented by Mozilla Foundation and Opera Software at the W3C workshop in 2004. The Web Hypertext Application Technology Working Group (WHATWG) was formed to start work on this...</p>
-            </section>
-       
-        <section id="features">
-                <h2>Features</h2>
-                <h4>Keeping up with times</h4>
-            
-            
-            <p>HTML5 introduced elements and attributes that fits the typical usage in modern websites. It introduced new semantic elements to replace generic blocks like div and span. Purely presentation elements such as font and center have also been completely dropped...</p>
-            <aside>
-            <h4>New APIs</h4>
-            <p>New APIs were introduced to allow cross-document communication, drag and drop functionality, immediate mode 2D drawing using the canvas element, webstorage etc...</p>
-            </aside>
-            <h4>Error Handling</h4>
-            <p>HTML5 provides detailed rules for parsing allowing HTML5 compliant browsers to produce the same type of behavior when parsing incorrect syntax. It has been designed for compatibility with older browsers. Older browsers ignore new HTML5 constructs... </p>
-             
-      </section>
-    </article>
-         
-                <h2>Logo</h2>
-    <figure>     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta names="keywords" content="Alex Brazda">
+    <meta names="keywords" content="basketball">
+    <meta names="keywords" content="doctor">
+    <meta names="keywords" content="what does Alex Brazda like">
+        <link rel="stylesheet" type="text/css" href="main.css"> 
+  </head>
+    <body>
+      <h1 class="header">Who am I?</h1>
+      <hr>
+      <h3 class="me"><p> My name is Alex Brazda and I am a freshman in highschool. I consider myself an outgoing person with a loving personality. Some of my interests include basketball, tennis, and swimming. I play tennis competitevely, while the other two are just hobbies of mine. To be honest, I don't have a plan yet for my future, but as of right now I would consider going into the medical field like my father. I enjoy spending time with my friends, but to me it is equally as important to spend time with my family. I am a unique person, and as a result I try to to stay true to myself as much as possible.</h3></p>
+  <a href="https://www.prospectivedoctor.com/reasons-to-be-a-doctor/">
+    <h3>Reasons to Become a Doctor</h3>
+  </a>
+  <h1 class="header"> My Interests </h1>
+  <hr>
+     <ol>
+       <li><b>Basketball</b></li>
+        <ul>
+          <li id="description">I started playing basketball as a hobby with brothers and dad when we got our first basketball hoop for christmas when I was 8. Ever since then I have loved playing and consider myself pretty good at it.</li>
+       </ul>
+       <li><b>Tennis</b></li> 
+         <ul>
+           <li id="description">I started playing tennis at around 6 years old. I followed after my older brother who has played his entire life as well. I enjoy it so much and plan on playing in high school.</li>
+       </ul>
+       <li id="swimming"><b>Swimming</b></li>
+        <ul>
+          <li id="description">I first learned to swim at very young age and I have always enjoyed the water. I do not swim competitevely, but I have a swimming pool in my backyard that I use often.</li>
+          </ul>
+  </ol>
+  <br>
+  <img id="basketball" src="https://basketballforever.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2020/09/15011622/Heat-article_FB-min-scaled.jpg" width="700px" height="500px">
+  <br>
+<img src="https://photoresources.wtatennis.com/photo-resources/2019/08/15/dbb59626-9254-4426-915e-57397b6d6635/tennis-origins-e1444901660593.jpg?width=1200&height=630" width="700px" height="500px">
+       <br>
+  <img src="https://clubsolaris.com/imgs/tips-to-take-care-of-the-beach-during-your-vacations/beach-sea-cancun-sun.png"
+       width="700px" height="500px">
+  <a href="https://www.miamiherald.com/sports/nba/miami-heat/article245799405.html">
+    <h3>Miami Heat vs Boston Celtics</h3>
+  </a>
+  
+  <h2 class="header"> Miami Heat Starting Lineup 2019-2020 Stats </h2>
+  <hr>
+  <!--Make a table with the Miami Heat players' statistics-->
+  <table border="1" class="table">
+    <tr>
+      <th>Name</th>
+      <th>PPG</th>
+      <th>RPG</th>
+      <th>APG</th>
+    </tr>
+    <tr id="butler">
+      <td>Jimmy Butler</td>
+      <td>19.9</td>
+      <td>6.7</td>
+      <td>6.0</td>
+    </tr>
+    <tr id="dragic">
+      <td>Goran Dragić</td>
+      <td>16.2</td>
+      <td>3.2</td>
+      <td>5.1</td>
+    </tr>
+    <tr id="robinson">
+      <td>Duncan Robinson
+      <td>13.5</td>
+      <td>3.2</td>
+      <td>1.4</td>
+    </tr>
+    <tr id="crowder">
+      <td>Jae Crowder</td>
+      <td>10.5</td>
+      <td>5.9</td>
+      <td>2.5</td>
+    </tr>
+    <tr id="adebayo">
+    <td>Bam Adebayo</td>
+    <td>15.9</td>
+    <td>10.2</td>
+    <td>5.1</td>
+    </tr>
+  </table>
     
-          <img src="http://courses.edx.org/asset-v1:W3Cx+HTML5.0x+1T2017+type@asset+block@html5_logo.png" alt="HTML5 Logo">
-        <figcaption>   Fig1. - The HTML5 logo made official in April 2011 <figcaption>
-        
-    </figure>
-            
-           <footer>
-                <h2>References</h2>
-              
-            <p>Contents of this sample have been adapted from the <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5 page on Wikipedia</a>
-            </p>
-             <details>
-               <summary>Authors</summary>
-               <p>Mary Smith</p>
-               <p>Jay Jones</p>
-             </details>
-               
-    
-        <p>Copyrights information...</p>
-<!--        We show our authors and contact details using the details and summary elements. Expand to show content. -->
-             <details>
-               <summary>Links</summary>
-                <ul style="margin: 0; padding: 0; list-style-type: none;">
-                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">email</a></li>
-                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">twitter</a></li>
-                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">facebook</a></li>
-                    <li style="display: inline;"><a href="#" style="text-decoration: none; padding: .2em 1em;">GitHub</a></li>
-                </ul>
-             </details>
-          </footer>
-</body>
-
+  
+    </body>
 </html>
